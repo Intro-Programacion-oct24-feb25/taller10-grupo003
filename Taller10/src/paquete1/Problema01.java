@@ -16,7 +16,7 @@ public class Problema01 {
         {7, 9.4, 10, 9}};
         String[] nombresEstudiantes = {"Jerry Ponce", "Gabriela Lewis", "David Bell"};
         double[] sumaNotas = new double[3];
-        String[] promedioNotasCualitativas = new String[3];
+        double[] promedioNotasCualitativas = new double[3];
         // 0 - 5.9 Bueno
         // 6 - 8.9 Muy Bueno
         // 9 - 10 Sobresaliente
@@ -42,6 +42,8 @@ public class Problema01 {
 
         for (int i = 0; i < promedioNotasCualitativas.length; i++) {
             promedio = sumaNotas[i] / 4;
+            promedioNotasCualitativas[i] = promedio;
+            
 
         }
 
