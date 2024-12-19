@@ -18,25 +18,25 @@ public class Problema03 {
         String[] valorNotasCualitativas = new String[3];
         int suma = 0;
 
-        for (int i = 0; i < notasCualitativas.length; i++) {
+        for (int i = 0; i < notasCuantitativas.length; i++) {
             for (int j = 0; i < notasCuantitativas.length; i++) {
                 if (notasCuantitativas[i][j] >= 0 && notasCuantitativas[i][j]
                         < 3) {
-                    valorNotasCualitativas[i] = "Insuficiente";
+                    notasCualitativas[i][j] = "Insuficiente";
                 } else {
                     if (notasCuantitativas[i][j] >= 3 && notasCuantitativas[i][j] < 5) {
-                        valorNotasCualitativas[i] = "Regular";
+                        notasCualitativas[i][j] = "Regular";
                     } else {
                         if (notasCuantitativas[i][j] >= 5 && notasCuantitativas[i][j] < 8) {
-                            valorNotasCualitativas[i] = "Buena";
+                            notasCualitativas[i][j] = "Buena";
                         } else {
                             if (notasCuantitativas[i][j] >= 8
                                     && notasCuantitativas[i][j] < 9.5) {
-                                valorNotasCualitativas[i] = "Muy buena";
+                                notasCualitativas[i][j] = "Muy buena";
                             } else {
                                 if (notasCuantitativas[i][j] >= 9.6
                                         && notasCuantitativas[i][j] <= 10) {
-                                    valorNotasCualitativas[i] = "Sobresaliente";
+                                    notasCualitativas[i][j] = "Sobresaliente";
                                 }
                             }
                         }
@@ -44,11 +44,15 @@ public class Problema03 {
 
                 }
             }
+            }
+            
+            for (int i = 0; i < notasCualitativas.length; i++) {
+            for (int j = 0; i < notasCuantitativas.length; i++) {
+                System.out.println(notasCuantitativas[i][j] + " es" + notasCualitativas[i][j]);
             
             
-            
-            
-
+}
+    }
         }
     }
-}
+
