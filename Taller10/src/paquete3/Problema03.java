@@ -5,8 +5,6 @@
  */
 package paquete3;
 
-
-
 /**
  *
  * @author reroes
@@ -17,7 +15,7 @@ public class Problema03 {
 
         String[][] notasCualitativas = new String[3][3];
         double[][] notasCuantitativas = {{7.1, 8, 10}, {3, 7, 9}, {10, 9, 2.1}};
-        String cadena= "";
+        String cadena = "";
         int suma = 0;
 
         for (int i = 0; i < notasCuantitativas.length; i++) {
@@ -40,28 +38,24 @@ public class Problema03 {
                                         && notasCuantitativas[i][j] <= 10) {
                                     notasCualitativas[i][j] = "Sobresaliente";
                                 }
-                            }   
+                            }
                         }
                     }
 
                 }
                 //cadena = String.format("%s%.2f es %s", cadena, 
-                   // notasCuantitativas[i][j], notasCualitativas[i][j]);
-               
+                // notasCuantitativas[i][j], notasCualitativas[i][j]);
+
             }
-            
-                    
-           
-            }
-            
-            for (int i = 0; i < notasCuantitativas.length; i++) {
+
+        }
+
+        for (int i = 0; i < notasCuantitativas.length; i++) {
             for (int j = 0; j < notasCuantitativas[i].length; j++) {
                 System.out.println(notasCuantitativas[i][j]
                         + " " + notasCualitativas[i][j]);
-            
-            
-}
-    }
+
+            }
         }
     }
-
+}
